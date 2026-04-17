@@ -3,14 +3,15 @@
 #include "Card.h"
 #include <vector>
 #include <iostream>
+using namespace std;
 
 class Player {
 protected:
-    std::vector<Card> hand;
-    std::string name;
+    vector<Card> hand;
+    string name;
 
 public:
-    Player(std::string n) : name(n) {}
+    Player(string n) : name(n) {}
     virtual ~Player() {}
 
     void addCard(Card c) { hand.push_back(c); }
@@ -34,11 +35,11 @@ public:
     bool isBusted() const { return getScore() > 21; }
 
     virtual void showHand() const {
-        std::cout << name << " 的牌: ";
+        cout << name << " 的牌: ";
         for (const auto& card : hand) {
             card.display();
         }
-        std::cout << " (總分: " << getScore() << ")\n";
+        cout << " (總分: " << getScore() << ")\n";
     }
 };
 
@@ -47,9 +48,9 @@ public:
     Dealer() : Player("莊家") {}
     
     void showPartialHand() const {
-        std::cout << name << " 的牌: ";
+        cout << name << " 的牌: ";
         hand[0].display();
-        std::cout << "[暗牌]\n";
+        cout << "[暗牌]\n";
     }
 };
 #endif
