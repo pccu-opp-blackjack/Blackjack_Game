@@ -25,8 +25,8 @@ public:
     }
 
     void shuffle() {
-        unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-        shuffle(cards.begin(), cards.end(), std::default_random_engine(seed));
+        unsigned seed = chrono::system_clock::now().time_since_epoch().count();
+        shuffle(cards.begin(), cards.end(), default_random_engine(seed));
     }
 
     Card dealCard() {
