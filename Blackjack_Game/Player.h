@@ -24,7 +24,6 @@ public:
             score += card.getValue();
             if (card.getRank() == "A") aces++;
         }
-        // 如果分數超過 21 且有 A，就把 A 當作 1 (減去 10)
         while (score > 21 && aces > 0) {
             score -= 10;
             aces--;
