@@ -15,12 +15,11 @@ public:
     Game() : player("玩家") {}
 
     void play() {
-        deck = Deck(); // 重置牌堆
+        deck = Deck();
         deck.shuffle();
         player.clearHand();
         dealer.clearHand();
 
-        // 初始發牌 (各兩張)
         player.addCard(deck.dealCard());
         dealer.addCard(deck.dealCard());
         player.addCard(deck.dealCard());
@@ -34,7 +33,6 @@ public:
         if (player.getScore() == 21) {
             cout << "玩家直接獲得 21 點！\n";
         } else {
-            // 玩家回合
             char choice;
             while (!player.isBusted()) {
                 cout << "要加牌嗎？(y/n): ";
@@ -53,7 +51,6 @@ public:
             return;
         }
 
-        // 莊家回合 (規則：未滿 17 點必須加牌)
         cout << "\n--- 莊家回合開始 ---\n";
         dealer.showHand();
         while (dealer.getScore() < 17) {
@@ -62,7 +59,6 @@ public:
             dealer.showHand();
         }
 
-        // 結算
         cout << "\n【最終結算】\n";
         if (dealer.isBusted()) {
             cout << "莊家爆牌！玩家獲勝。\n";
