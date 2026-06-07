@@ -40,4 +40,9 @@
 * <img width="1062" height="1056" alt="image (1)" src="https://github.com/user-attachments/assets/80d74340-58be-468c-90d2-c1b3ca6211e5" />
 
 # 分工資訊:
+組長: 林星丞  組員: 許子謙  組員: 王通元
+程式撰寫      撰寫程式      程式撰寫
+查找資料      查找資料      查找資料
+簡報製作      上台報告      上台報告
+上台報告
 
