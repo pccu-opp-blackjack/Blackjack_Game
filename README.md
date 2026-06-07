@@ -23,6 +23,8 @@
 * **`Player.h`**：基礎玩家類別，管理手牌、智慧計分與 `virtual` 顯示方法。
 * **`Dealer.h`**：繼承自 `Player`，實作莊家特有的「隱藏首張暗牌」顯示行為。
 * **`Game.h`**：遊戲中樞 (Controller)，掌控整個遊戲生命週期與雙方回合邏輯。
+* <img width="1062" height="1056" alt="image (1)" src="https://github.com/user-attachments/assets/80d74340-58be-468c-90d2-c1b3ca6211e5" />
+
 # 程式使用方式:
 直接下載專案壓縮檔並解壓縮
 # 程式安裝方式:
