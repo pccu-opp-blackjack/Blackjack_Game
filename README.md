@@ -23,7 +23,6 @@
 * **`Player.h`**：基礎玩家類別，管理手牌、智慧計分與 `virtual` 顯示方法。
 * **`Dealer.h`**：繼承自 `Player`，實作莊家特有的「隱藏首張暗牌」顯示行為。
 * **`Game.h`**：遊戲中樞 (Controller)，掌控整個遊戲生命週期與雙方回合邏輯。
-* <img width="1062" height="1056" alt="image (1)" src="https://github.com/user-attachments/assets/80d74340-58be-468c-90d2-c1b3ca6211e5" />
 
 # 程式使用方式:
 直接下載專案壓縮檔並解壓縮
@@ -31,8 +30,14 @@
 本專案僅依賴標準 C++ 函式庫，不需額外安裝第三方庫。請確保你的電腦已安裝 C++ 編譯器
 
 # 運行畫面截圖:
+<img width="254" height="152" alt="image (3)" src="https://github.com/user-attachments/assets/8bc782b2-dce5-4217-93f4-c50b767d4d69" />
+<img width="302" height="131" alt="image (5)" src="https://github.com/user-attachments/assets/a51ced1c-57ea-4b64-b43c-dc7beb81d8e0" />
+<img width="251" height="93" alt="image (2)" src="https://github.com/user-attachments/assets/1ac28dc9-ff5b-42fb-8183-a582f943b0f9" />
+<img width="250" height="100" alt="image (4)" src="https://github.com/user-attachments/assets/0dc82117-1742-4329-8f0a-6b8520212169" />
+
 
 # UML 圖片:
+* <img width="1062" height="1056" alt="image (1)" src="https://github.com/user-attachments/assets/80d74340-58be-468c-90d2-c1b3ca6211e5" />
 
 # 分工資訊:
 
